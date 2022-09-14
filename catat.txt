@@ -1,0 +1,143 @@
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote
+$ git clone https://github.com/nikoalfin/belajar-git-remote.git
+Cloning into 'belajar-git-remote'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Receiving objects: 100% (3/3), done.
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote
+$ ls
+belajar-git-remote/
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote
+$ cd belajar-git-remote/
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git branch
+* main
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ ls
+README.md
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        style.css
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git add .
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git commit -m "tambah file style.css"
+[main 5c98a2f] tambah file style.css
+ 1 file changed, 3 insertions(+)
+ create mode 100644 style.css
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 313 bytes | 313.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nikoalfin/belajar-git-remote.git
+   5af80d5..5c98a2f  main -> main
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git remote
+origin
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ alias graph="git log --all --decorate --oneline --graph"
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ graph
+* 5c98a2f (HEAD -> main, origin/main, origin/HEAD) tambah file style.css
+* 5af80d5 Initial commit
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git push
+Everything up-to-date
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   style.css
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        ea.html
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git add .
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git commit -m "tambah file ea.html dan paragraf lorem"
+[main d3fefc9] tambah file ea.html dan paragraf lorem
+ 2 files changed, 13 insertions(+)
+ create mode 100644 ea.html
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git push
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 698 bytes | 349.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/nikoalfin/belajar-git-remote.git
+   5c98a2f..d3fefc9  main -> main
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$ graph
+* d3fefc9 (HEAD -> main, origin/main, origin/HEAD) tambah file ea.html dan paragraf lorem
+* 5c98a2f tambah file style.css
+* 5af80d5 Initial commit
+
+nikoalfin@DESKTOP-QH32JFI MINGW64 ~/Music/Learn-git/git remote/belajar-git-remote (main)
+$
